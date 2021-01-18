@@ -64,4 +64,7 @@ resource "rancher2_cluster" "cluster" {
   }
 }
 
-
+resource "rancher2_bootstrap" "admin" {
+  password = "blahblah"
+  telemetry = true
+}
